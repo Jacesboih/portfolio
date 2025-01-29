@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-End Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    /* Add custom animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .button{
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-blue-600 text-white fixed w-full top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-semibold">
+        <a href="#">John Doe</a>
+      </div>
+      <ul class="flex space-x-8">
+        <li><a href="#about" class="hover:text-blue-200">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-200">Skills</a></li>
+        <!-- <li><a href="#projects" class="hover:text-blue-200">Projects</a></li> -->
+        <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-gradient-to-r from-blue-600 to-indigo-700 text-white flex items-center justify-center text-center px-6" data-aos="fade-up">
+    <div class="space-y-6 animate-fadeIn">
+      <h1 class="text-5xl font-extrabold">Hi, I'm John Doe</h1>
+      <p class="text-xl">Front-End Developer with 10+ years of experience in HTML, CSS, WordPress, Elementor, Photoshop, and Canva.</p>
+      <div class="button">
+        <a href="#contact" class="bg-white text-blue-600 py-3 px-8 rounded-full font-semibold transition duration-300 hover:bg-gray-200">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-gray-100 text-center" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-lg max-w-3xl mx-auto">With over 10 years of experience in front-end development, I specialize in creating responsive, user-friendly websites. I have expertise in HTML, CSS, WordPress, Elementor, and graphic design tools like Photoshop and Canva.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 bg-gray-50 text-center" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8">My Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+          <h3 class="text-2xl font-semibold mb-4">HTML & CSS</h3>
+          <p class="text-lg">Advanced knowledge of HTML5, CSS3, Flexbox, and CSS Grid.</p>
+        </div>
+        <div class="bg-green-600 text-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+          <h3 class="text-2xl font-semibold mb-4">WordPress & Elementor</h3>
+          <p class="text-lg">Skilled in building custom websites using WordPress and Elementor.</p>
+        </div>
+        <div class="bg-purple-600 text-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+          <h3 class="text-2xl font-semibold mb-4">Photoshop & Canva</h3>
+          <p class="text-lg">Experienced in creating custom designs, graphics, and UI elements for websites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 bg-gray-100" data-aos="fade-up" style="display: none;">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Recent Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+          <img src="https://via.placeholder.com/400" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">E-Commerce Website</h3>
+            <p class="text-gray-600 mb-4">Developed a responsive e-commerce website with custom WordPress themes and Elementor.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+          <img src="https://via.placeholder.com/400" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">Personal Portfolio</h3>
+            <p class="text-gray-600 mb-4">Designed and developed a personal portfolio website to showcase my skills and projects.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500">
+          <img src="https://via.placeholder.com/400" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-4">Corporate Website</h3>
+            <p class="text-gray-600 mb-4">Built a professional website for a corporate client with custom designs and responsive layout.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-blue-600 text-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-8">I'm always open to discussing new projects or creative opportunities. Feel free to reach out!</p>
+      <p>Email Address - Jacesboih@gmail.com</p>
+      <p>Phone Number - +91-8810476412</p>
+    </div>
+  </section>
+
+  <!-- do not display
+
+  <section id="contact" class="py-24 bg-blue-600 text-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-lg mb-8">I'm always open to discussing new projects or creative opportunities. Feel free to reach out!</p>
+      <form action="#" method="POST" class="max-w-xl mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg border border-gray-300" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg border border-gray-300" required>
+        <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded-lg border border-gray-300" required></textarea>
+        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+    
+  -->
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+
+  <!-- Initialize AOS library -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+
+</html>
